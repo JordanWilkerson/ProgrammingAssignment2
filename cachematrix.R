@@ -1,5 +1,5 @@
 ## Caching the Inverse of a Matrix. R-Programming Assignment 2
-#   Jordan T Wilkerson,Jan 2015
+#   Adapted from Roger Peng by Jordan T Wilkerson, Jan 2015
 #
 ## The following contains two fucntions makeCacheMatrix() and cacheSolve()
 #   makeCacheMatrix() creates a special "matrix" object that can cache its inverse.
