@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Caching the Inverse of a Matrix. R-Programming Assignment 2
+
+## write a function to 
 
 ## Write a short comment describing this function
 
