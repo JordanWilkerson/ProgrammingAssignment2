@@ -3,17 +3,18 @@
 #
 ## The following contains two fucntions makeCacheMatrix() and cacheSolve()
 #   makeCacheMatrix() creates a special "matrix" object that can cache its inverse.
-#   cacheSolve computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
+#   cacheSolve() computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
 #
 #  If the inverse has already been calculated (and the matrix has not changed), 
-#   then the cachesolve should retrieve the inverse from the cache.
-#
+#   then the cachesolve() will retrieve the inverse from the cache instead of recomputing it.
+
 ## To test these fucntions use the following commands:
 #   > x <- matrix(c(1,-0.25,-0.25,1), 2,2)  # defines a sample matrix 'x' (but any square, invertable matrix will work)
 #   > mat <- makeCacheMatrix(x)             # generates a list of caching functions
 #   > cacheSolve(mat)                       # first time this is called it solves for the inverse of the matrix in 'mat'
 #   > cacheSolve(mat)                       # second time, it sees the inverse has already been cached and retreives it
 #   > cacheSolve(mat) %*% x                 # The inverse multiplied by the matrix produces the Idenity matrix (just a check)
+
 
 ## makeCacheMatrix()
 #   This will take a matrix 'x' as an input, then create a list of functions.
